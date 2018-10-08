@@ -1,0 +1,33 @@
+<app-header></app-header>
+<p>
+  这是一个新闻组件 -- {{msg}}
+</p>
+<div id="{{id}}">属性绑定方法一：调试工具查看属性</div>
+<div [id]="id">属性绑定方法二：调试工具查看属性</div>
+
+<div title="{{msg}}">属性绑定方法二：鼠标描上去看看属性</div>
+<div [title]="msg">属性绑定方法三：鼠标描上去看看属性</div>
+
+<p [innerHTML] = "h"></p>
+
+<br>
+<p>数据循环</p>
+<ul>
+  <li *ngFor = "let item of arr; let i = index">
+    {{item}} -- {{i}}
+  </li>
+</ul>
+
+<div *ngIf = "state > 1">state的值大于1</div>
+<div *ngIf = "state > 10">state的值大于10</div>
+
+<p>点击事件</p>
+<button (click) = "funstate()">点击</button>
+
+<br><br><br>
+
+<!--双向数据绑定-->
+<input [(ngModel)]= "inputval"/>
+
+{{inputval}}
+

@@ -11,7 +11,7 @@ export class HeaderComponent implements OnInit {
   constructor() { } //构造函数  一初始化就会调用这个方法
 
   ngOnInit() { //生命周期函数
-    this.msg = "这是一个angular的数据";
+    this.msg = "";
   }
 
 }
