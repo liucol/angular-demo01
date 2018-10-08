@@ -11,16 +11,16 @@ import { StorageService } from './services/storage.service';
 
 
 @NgModule({
-  declarations: [
+  declarations: [   //引入组件
     AppComponent,
     HeaderComponent,
     NewsComponent,
   ],
-  imports: [
+  imports: [  //引入的依赖
     BrowserModule,
     FormsModule
   ],
-  providers: [StorageService],
-  bootstrap: [AppComponent]
+  providers: [StorageService],  //引入服务
+  bootstrap: [AppComponent]  //默认执行的组件
 })
 export class AppModule { }
